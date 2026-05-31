@@ -1,9 +1,13 @@
 function Education() {
     return (
         <section>
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Lviv Polytechnic National University</strong> — Cyber Security and Information security (September 2023 - 2027)</li>
+            <h2 className="text-2xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-4">Education</h2>
+            <ul className="space-y-3">
+                <li className="flex flex-col">
+                    <strong className="text-slate-800">Lviv Polytechnic National University</strong>
+                    <span className="text-slate-600">Cyber Security and Information security</span>
+                    <span className="text-sm text-slate-500">September 2023 - 2027</span>
+                </li>
             </ul>
         </section>
     );

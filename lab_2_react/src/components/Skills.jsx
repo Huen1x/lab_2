@@ -1,17 +1,19 @@
 function Skills() {
+    const skillsList = [
+        "JavaScript, TypeScript", "Node.js (Nest.js, Express.js)", "Python (FastAPI)", 
+        "PostgreSQL, MySQL", "MongoDB, Redis", "Git, GitHub, Docker", "RestAPI, SOLID, SCRUM"
+    ];
+
     return (
         <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>JavaScript, TypeScript - node.js (Nest.js, Express.js)</li>
-                <li>Python (FastAPI)</li>
-                <li>PostgreSQL, MySQL Sequlize, TypeORM, SQLAlchemy, Alembic</li>
-                <li>MongoDB, Redis</li>
-                <li>Git, GitHub, Docker, Docker-compose</li>
-                <li>HTTP/HTTPS, RestAPI</li>
-                <li>Clean code, SOLID Principles</li>
-                <li>Jira, SCRUM</li>
-            </ul>
+            <h2 className="text-2xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-4">Skills</h2>
+            <div className="flex flex-wrap gap-2">
+                {skillsList.map((skill, index) => (
+                    <span key={index} className="bg-slate-100 border border-slate-200 text-slate-700 px-3 py-1 rounded-md text-sm font-medium hover:bg-blue-500 hover:text-white transition cursor-default">
+                        {skill}
+                    </span>
+                ))}
+            </div>
         </section>
     );
 }

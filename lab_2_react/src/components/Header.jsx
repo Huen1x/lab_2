@@ -1,15 +1,15 @@
 function Header() {
     return (
-        <header>
-            <h1>Illia Nesterenko</h1>
-            <p><strong>Node.js developer</strong></p>
-            <address>
-                <p><strong>Address:</strong> קרית גת, יצית תשז 1</p>
-                <p><strong>Phone / WhatsApp:</strong> <a href="tel:0506498988">0506498988</a></p>
-                <p><strong>Email:</strong> <a href="mailto:ilya.nesterenko140506@gmail.com">ilya.nesterenko140506@gmail.com</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Huen1x" target="_blank">https://github.com/Huen1x</a></p>
-                <p><strong>LinkedIn:</strong> Illia Nesterenko</p>
-                <p><strong>Telegram:</strong> @huenix666</p>
+        <header className="bg-slate-800 text-white p-10 text-center flex flex-col items-center">
+            <h1 className="text-4xl font-extrabold tracking-wide mb-2">Illia Nesterenko</h1>
+            <p className="text-xl text-blue-300 font-medium mb-6">Node.js developer</p>
+            
+            <address className="not-italic flex flex-wrap justify-center gap-4 text-sm text-slate-300">
+                <span className="bg-slate-700 px-3 py-1 rounded-full shadow-sm">📍 קרית גת, יצית תשז 1</span>
+                <a href="tel:0506498988" className="bg-slate-700 px-3 py-1 rounded-full shadow-sm hover:bg-blue-600 transition">📞 0506498988</a>
+                <a href="mailto:ilya.nesterenko140506@gmail.com" className="bg-slate-700 px-3 py-1 rounded-full shadow-sm hover:bg-blue-600 transition">✉️ Email</a>
+                <a href="https://github.com/Huen1x" target="_blank" rel="noreferrer" className="bg-slate-700 px-3 py-1 rounded-full shadow-sm hover:bg-blue-600 transition">💻 GitHub</a>
+                <span className="bg-slate-700 px-3 py-1 rounded-full shadow-sm">📱 TG: @huenix666</span>
             </address>
         </header>
     );
